@@ -35,15 +35,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  isFollowing = !isFollowing;
-                });
-              },
-              child: Button(
-                isFollowing: isFollowing,
-              ))), // This trailing comma makes auto-formatting nicer for build methods.
+          child: Button(
+        isFollowing: isFollowing,
+      )), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
